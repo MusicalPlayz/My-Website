@@ -43,12 +43,34 @@
             text-decoration: underline;
         }
 
+        /* Large Card */
+        .large-card {
+            background: white;
+            width: 450px;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            margin-top: 80px; /* Spacing between navbar and large card */
+            margin-bottom: 20px; /* Space between large card and grid */
+        }
+
+        .large-card h1 {
+            font-size: 22px;
+            margin-bottom: 10px;
+        }
+
+        .large-card p {
+            color: #555;
+            font-size: 16px;
+        }
+
         /* Container for cards */
         .container {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             gap: 15px;
-            margin-top: 20px;
+            margin-top: 20px; /* Adds space above the grid */
         }
 
         .card {
@@ -92,13 +114,19 @@
     <!-- Top Bar -->
     <div class="navbar">
         <div class="nav-links">
-            <a href="#">Home</a>
-            <a href="#">Projects</a>
+            <a href="https://musicalplayz.github.io/My-Website/">Home</a>
+            <a href="https://github.com/MusicalPlayz/My-Website">Projects</a>
             <a href="#">Contact</a>
         </div>
     </div>
 
-    <!-- Cards -->
+    <!-- Large Card Above Grid -->
+    <div class="large-card">
+        <h1>Welcome to My Portfolio</h1>
+        <p>I'm MusicalPlayz, a YouTuber, gamer, and aspiring software engineer. This website is a hub of all of my work/upcoming projects. Check out my work below!</p>
+    </div>
+
+    <!-- Cards Grid -->
     <div class="container">
         <div class="card">
             <h2>YouTube</h2>
@@ -109,13 +137,13 @@
         <div class="card">
             <h2>GitHub</h2>
             <p>See my coding projects.</p>
-            <button onclick="window.location.href='https://github.com/';">Visit</button>
+            <button onclick="window.location.href='https://github.com/MusicalPlayz/My-Website/';">Visit</button>
         </div>
 
         <div class="card">
-            <h2>Twitter</h2>
-            <p>Follow me for updates!</p>
-            <button onclick="window.location.href='https://twitter.com/';">Visit</button>
+            <h2>Roblox</h2>
+            <p>Check out my account!</p>
+            <button onclick="window.location.href='https://www.roblox.com/users/728153741/profile';">Visit</button>
         </div>
 
         <div class="card">
